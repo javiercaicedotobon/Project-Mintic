@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" th:href="@{/css/reset.css}">
+  <link rel="stylesheet" th:href="@{/css/stylessfrm.css}">
+  <title>Document</title>
+</head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" th:href="@{'/'}">
+    <img src="/img/erp.png" width="40" height="40" class="d-inline-block align-top fw-bold" alt="">
+    Gestion APP
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link px-5 fw-bold" th:href="@{/empleado}">Empleados</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-5 fw-bold" th:href="@{/empresa}">Empresas</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-5 fw-bold" th:href="@{/movimiento}">Movimientos</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+<body>
+<fieldset class="fi">
+  <legend >Registrar Cliente</legend>
+
+  <form th:action="@{/empleado/guardar}"  th:object="${empleadoinsertar}" method="POST" class="frm">
+
+    <label for="doc">Cedula
+      <input required class="form-control-sm"  type="text" id="doc" th:field="*{cedula}" >
+    </label>
+
+    <label for="nom">Nombre Completo
+      <input class="form-control-sm"  type="text" id="nom" th:field="*{nombre}">
+    </label>
+
+    <label for="eml">Correo
+      <input class="form-control-sm"  type="text" id="eml" th:field="*{correo}">
+    </label>
+
+    <label for="rol">Rol
+      <input class="form-control-sm" type="text" id="rol" th:field="*{rol}">
+    </label>
+
+    <label for="nit">Nit
+      <input required class="form-control-sm" type="text" id="nit" th:field="*{empresas.nit}" >
+    </label>
+
+
+    <input class="boton" type="submit" value="Guardar Empleado">
+
+  </form>
+</fieldset>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+
+</html>

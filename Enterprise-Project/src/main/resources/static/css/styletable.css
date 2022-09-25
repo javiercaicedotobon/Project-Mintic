@@ -1,0 +1,33 @@
+table{
+    background-color: rgb(8, 14, 13);
+    margin-left: auto ;
+    margin-right:  auto;
+    margin-top: 10px;
+    width: 40%;
+    height: 100px;
+}
+
+
+tr{
+    height: 60px;
+    background-color: rgb(73, 180, 161);
+}
+
+td{
+    background-color: aliceblue;
+    color: rgb(8, 14, 13);
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+
+th{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+.agg{
+    padding: 10px;
+}

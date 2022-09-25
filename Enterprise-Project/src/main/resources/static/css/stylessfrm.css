@@ -1,0 +1,68 @@
+.fi{
+    background-color: rgb(42, 167, 144);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    padding: 20px;
+
+}
+
+
+label{
+    color: #080e0d;
+    font-size: 20px;
+    width: 100%;
+}
+
+
+
+[type="text"]{
+    /*display: block;*/
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background-color: rgba(255,255,255,0.4);
+    margin-bottom: 20px;
+}
+
+[type="email"]{
+    /*display: block;*/
+    width: 100%;
+    height: 30px;
+    border: 0;
+    background-color: rgba(255,255,255,0.4);
+}
+
+[type="date"]{
+    /*display: block;*/
+    width: 70%;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.ec{
+    display: block;
+}
+
+.frm{
+    background-color: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+legend{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 30px;;
+}
+
+.form-select{
+    width: 100%;
+    height: 30px;
+    border: 0;
+    background-color: rgba(255,255,255,0.4);
+}
